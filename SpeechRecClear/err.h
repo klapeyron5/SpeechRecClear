@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 /*
  * Исключительно для дебага. Отладка через консоль.
  */
@@ -5,11 +7,25 @@
 /**
  * Exit with non-zero status after error message
  */
-#define E_FATAL_SYSTEM(...)                                                  \
-    do {                                                                     \
-        err_msg_system(ERR_FATAL, FILELINE, __VA_ARGS__);				     \
-        exit(EXIT_FAILURE);                                                  \
+#define E_FATAL(...)                               \
+    do {                                           \
+        err_msg(ERR_FATAL, FILELINE, __VA_ARGS__); \
+        exit(EXIT_FAILURE);                        \
     } while (0)
+
+/**
+ * Print error text; Call perror(""); exit(errno);
+ */
+#define E_FATAL_SYSTEM(...)									\
+    do {													\
+        err_msg_system(ERR_FATAL, FILELINE, __VA_ARGS__);	\
+        exit(EXIT_FAILURE);									\
+    } while (0)
+
+/**
+ * Print error message to error log
+ */
+#define E_ERROR(...)     err_msg(ERR_ERROR, FILELINE, __VA_ARGS__)
 
 #define FILELINE __FILE__,__LINE__
 
@@ -23,6 +39,7 @@ typedef enum err_enum {
     ERR_MAX
 } err_lvl;
 
+void err_msg(err_lvl lvl, const char* path, long ln, const char* fmt, ...);
 void err_msg_system(err_lvl lvl, const char* path, long ln, const char* fmt, ...);
 
 /**

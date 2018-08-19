@@ -2,7 +2,8 @@
  * “ут объ€влены общие используемые типы
  */
 
-typedef short int16;
+typedef short	int16;
+typedef int		int32;
 
 #ifndef TRUE
 #define TRUE 1

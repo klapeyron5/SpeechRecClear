@@ -16,6 +16,35 @@ static void* err_user_data;
 static FILE*  logfp = NULL;
 static int    logfp_disabled = FALSE;
 
+void err_msg(err_lvl lvl, const char *path, long ln, const char *fmt, ...)
+{
+    static const char *err_prefix[ERR_MAX] = {
+        "DEBUG", "INFO", "INFOCONT", "WARN", "ERROR", "FATAL"
+    };
+
+    char msg[1024];
+    va_list ap;
+
+    if (!err_cb)
+        return;
+
+    va_start(ap, fmt);
+    vsnprintf(msg, sizeof(msg), fmt, ap);
+    va_end(ap);
+
+    if (path) {
+        const char *fname = path2basename(path);
+        if (lvl == ERR_INFOCONT)
+    	    err_cb(err_user_data, lvl, "%s(%ld): %s", fname, ln, msg);
+        else if (lvl == ERR_INFO)
+            err_cb(err_user_data, lvl, "%s: %s(%ld): %s", err_prefix[lvl], fname, ln, msg);
+        else
+    	    err_cb(err_user_data, lvl, "%s: \"%s\", line %ld: %s", err_prefix[lvl], fname, ln, msg);
+    } else {
+        err_cb(err_user_data, lvl, "%s", msg);
+    }
+}
+
 void err_msg_system(err_lvl lvl, const char* path, long ln, const char* fmt, ...) {
     int local_errno = errno;
     
