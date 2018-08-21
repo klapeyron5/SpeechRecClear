@@ -27,9 +27,14 @@
  */
 #define E_ERROR(...)     err_msg(ERR_ERROR, FILELINE, __VA_ARGS__)
 
+/**
+ * Print logging information to standard error stream
+ */
+#define E_INFO(...)      err_msg(ERR_INFO, FILELINE, __VA_ARGS__)
+
 #define FILELINE __FILE__,__LINE__
 
-typedef enum err_enum {
+typedef enum err_e {
     ERR_DEBUG,
     ERR_INFO,
     ERR_INFOCONT,
@@ -37,10 +42,10 @@ typedef enum err_enum {
     ERR_ERROR,
     ERR_FATAL,
     ERR_MAX
-} err_lvl;
+} err_lvl_t;
 
-void err_msg(err_lvl lvl, const char* path, long ln, const char* fmt, ...);
-void err_msg_system(err_lvl lvl, const char* path, long ln, const char* fmt, ...);
+void err_msg(err_lvl_t lvl, const char* path, long ln, const char* fmt, ...);
+void err_msg_system(err_lvl_t lvl, const char* path, long ln, const char* fmt, ...);
 
 /**
  * Returns the last part of the path, without modifying anything in memory.

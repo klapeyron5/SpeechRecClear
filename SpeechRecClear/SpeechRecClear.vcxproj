@@ -65,12 +65,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ac_mod.h" />
     <ClInclude Include="err.h" />
+    <ClInclude Include="logged_calloc.h" />
     <ClInclude Include="prim_type.h" />
     <ClInclude Include="wav_rec.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="err.c" />
+    <ClCompile Include="logged_calloc.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="wav_rec.c" />
   </ItemGroup>

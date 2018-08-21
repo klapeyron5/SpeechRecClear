@@ -1,15 +1,17 @@
-﻿Build started 19.08.2018 12:14:10.
+﻿Build started 21.08.2018 19:05:20.
      1>Project "C:\Adocuments\Library\Clapeyron_ind\speech rec\pocketsphinxlib\PocketsphinxClearBuilding\SpeechRecClear\SpeechRecClear.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /D _MBCS /D _CRT_SECURE_NO_WARNINGS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt err.c main.c wav_rec.c
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /D _MBCS /D _CRT_SECURE_NO_WARNINGS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt err.c logged_calloc.c main.c wav_rec.c
          wav_rec.c
-     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\wav_rec.c(10): warning C4101: 'hyp' : unreferenced local variable
-     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\wav_rec.c(8): warning C4101: 'adbuf' : unreferenced local variable
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\wav_rec.c(74): warning C4013: 'check_wav_header' undefined; assuming extern returning int
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\wav_rec.c(61): warning C4101: 'hyp' : unreferenced local variable
          main.c
+         logged_calloc.c
          err.c
          Generating Code...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Adocuments\Library\Clapeyron_ind\speech rec\pocketsphinxlib\PocketsphinxClearBuilding\Debug\SpeechRecClear.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Adocuments\Library\Clapeyron_ind\speech rec\pocketsphinxlib\PocketsphinxClearBuilding\Debug\SpeechRecClear.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Adocuments\Library\Clapeyron_ind\speech rec\pocketsphinxlib\PocketsphinxClearBuilding\Debug\SpeechRecClear.lib" /MACHINE:X86 Debug\err.obj
+         Debug\logged_calloc.obj
          Debug\main.obj
          Debug\wav_rec.obj
          SpeechRecClear.vcxproj -> C:\Adocuments\Library\Clapeyron_ind\speech rec\pocketsphinxlib\PocketsphinxClearBuilding\Debug\SpeechRecClear.exe
@@ -17,4 +19,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.44
+Time Elapsed 00:00:00.68

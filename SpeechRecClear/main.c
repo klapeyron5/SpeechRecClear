@@ -4,6 +4,11 @@
 /**
  * словарь обозначений в коде:
  * ad - audio
+ * ac - acoustic
+ * mod - model
+ * _s - structure
+ * _t - type
+ * _e - enum
  */
 
 /*

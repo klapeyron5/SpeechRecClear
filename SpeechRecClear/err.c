@@ -6,9 +6,9 @@
 #include "err.h"
 #include "prim_type.h"
 
-typedef void (*err_cb_f)(void* user_data, err_lvl, const char *, ...);
+typedef void (*err_cb_f)(void* user_data, err_lvl_t, const char *, ...);
 
-void err_logfp_cb(void* user_data, err_lvl lvl, const char* fmt, ...);
+void err_logfp_cb(void* user_data, err_lvl_t lvl, const char* fmt, ...);
 
 static err_cb_f err_cb = err_logfp_cb;
 static void* err_user_data;
@@ -16,7 +16,7 @@ static void* err_user_data;
 static FILE*  logfp = NULL;
 static int    logfp_disabled = FALSE;
 
-void err_msg(err_lvl lvl, const char *path, long ln, const char *fmt, ...)
+void err_msg(err_lvl_t lvl, const char *path, long ln, const char *fmt, ...)
 {
     static const char *err_prefix[ERR_MAX] = {
         "DEBUG", "INFO", "INFOCONT", "WARN", "ERROR", "FATAL"
@@ -45,7 +45,7 @@ void err_msg(err_lvl lvl, const char *path, long ln, const char *fmt, ...)
     }
 }
 
-void err_msg_system(err_lvl lvl, const char* path, long ln, const char* fmt, ...) {
+void err_msg_system(err_lvl_t lvl, const char* path, long ln, const char* fmt, ...) {
     int local_errno = errno;
     
     static const char* err_prefix[ERR_MAX] = {
@@ -84,7 +84,7 @@ FILE* err_get_logfp(void) {
     return logfp;
 }
 
-void err_logfp_cb(void* user_data, err_lvl lvl, const char* fmt, ...) {
+void err_logfp_cb(void* user_data, err_lvl_t lvl, const char* fmt, ...) {
     va_list ap;
     FILE* fp = err_get_logfp();
 
