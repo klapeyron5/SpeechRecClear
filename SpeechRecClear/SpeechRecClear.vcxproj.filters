@@ -23,7 +23,13 @@
     <ClInclude Include="ac_mod.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="logged_calloc.h">
+    <ClInclude Include="logged_alloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="str_funcs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="decoder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -35,7 +41,16 @@
     <ClCompile Include="wav_rec.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="logged_calloc.c">
+    <ClCompile Include="ac_mod.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="logged_alloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="str_funcs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="decoder.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

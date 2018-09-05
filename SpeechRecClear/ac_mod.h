@@ -1,4 +1,16 @@
+#include <stdio.h>
+
 #include "prim_type.h"
+
+/**
+ * States in utterance processing.
+ */
+typedef enum acmod_state_e {
+    ACMOD_IDLE,			/**< Not in an utterance. */
+    ACMOD_STARTED,      /**< Utterance started, no data yet. */
+    ACMOD_PROCESSING,   /**< Utterance in progress. */
+    ACMOD_ENDED         /**< Utterance ended, still buffering. */
+} acmod_state_t;
 
 /**
  * Acoustic model structure.
@@ -24,5 +36,50 @@
 struct ac_mod_s {
     /* A whole bunch of flags and counters: */
     uint8 state;        /**< State of utterance processing. */
+
+    /* Utterance processing: */
+    FILE *mfcñ_fh;		/**< File for writing acoustic feature data. */
+    FILE *raw_fh;		/**< File for writing raw audio data. */
+    FILE *sen_fh;        /**< File for writing senone score data. */
 };
+
 typedef struct ac_mod_s ac_mod_t;
+
+/**
+ * Initialize an acoustic model.
+ *
+ * @return a newly initialized acmod_t, or NULL on failure.
+ */
+ac_mod_t *ac_mod_init();
+
+/**
+ * Finalize an acoustic model.
+ */
+void ac_mod_free(ac_mod_t *ac_mod);
+
+/**
+ * Start logging MFCCs to a filehandle.
+ *
+ * @param acmod Acoustic model object.
+ * @param logfh Filehandle to log to.
+ * @return 0 for success, other on error.
+ */
+int ac_mod_set_mfcñ_fh(ac_mod_t *ac_mod, FILE *log_fh);
+
+/**
+ * Start logging raw audio to a filehandle.
+ *
+ * @param acmod Acoustic model object.
+ * @param logfh Filehandle to log to.
+ * @return 0 for success, <0 on error.
+ */
+int ac_mod_set_raw_fh(ac_mod_t *ac_mod, FILE *log_fh);
+
+/**
+ * Start logging senone scores to a filehandle.
+ *
+ * @param acmod Acoustic model object.
+ * @param logfh Filehandle to log to.
+ * @return 0 for success, <0 on error.
+ */
+int ac_mod_set_sen_fh(ac_mod_t *ac_mod, FILE *sen_fh);

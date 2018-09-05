@@ -66,15 +66,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="ac_mod.h" />
+    <ClInclude Include="decoder.h" />
     <ClInclude Include="err.h" />
-    <ClInclude Include="logged_calloc.h" />
+    <ClInclude Include="logged_alloc.h" />
     <ClInclude Include="prim_type.h" />
+    <ClInclude Include="str_funcs.h" />
     <ClInclude Include="wav_rec.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ac_mod.c" />
+    <ClCompile Include="decoder.c" />
     <ClCompile Include="err.c" />
-    <ClCompile Include="logged_calloc.c" />
+    <ClCompile Include="logged_alloc.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="str_funcs.c" />
     <ClCompile Include="wav_rec.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

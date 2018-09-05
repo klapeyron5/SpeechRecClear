@@ -9,12 +9,13 @@
  * _s - structure
  * _t - type
  * _e - enum
+ * fh - filehandler
+ * dc - decoder
  */
 
 /*
  * 
  */
 int main() {
-	recognise_from_file();
-	return 0;
+	return recognise_from_file();
 }

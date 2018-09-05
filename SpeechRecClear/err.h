@@ -23,6 +23,11 @@
     } while (0)
 
 /**
+ * Print error text; Call perror("");
+ */
+#define E_ERROR_SYSTEM(...)     err_msg_system(ERR_ERROR, FILELINE, __VA_ARGS__)
+
+/**
  * Print error message to error log
  */
 #define E_ERROR(...)     err_msg(ERR_ERROR, FILELINE, __VA_ARGS__)
