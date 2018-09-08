@@ -68,6 +68,8 @@
     <ClInclude Include="ac_mod.h" />
     <ClInclude Include="decoder.h" />
     <ClInclude Include="err.h" />
+    <ClInclude Include="fe.h" />
+    <ClInclude Include="feat.h" />
     <ClInclude Include="logged_alloc.h" />
     <ClInclude Include="prim_type.h" />
     <ClInclude Include="str_funcs.h" />
@@ -77,6 +79,8 @@
     <ClCompile Include="ac_mod.c" />
     <ClCompile Include="decoder.c" />
     <ClCompile Include="err.c" />
+    <ClCompile Include="fe.c" />
+    <ClCompile Include="feat.c" />
     <ClCompile Include="logged_alloc.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="str_funcs.c" />

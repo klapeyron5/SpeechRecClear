@@ -1,14 +1,7 @@
-﻿Build started 06.09.2018 0:02:06.
-     1>Project "C:\Adocuments\Library\Clapeyron_ind\speech rec\pocketsphinxlib\PocketsphinxClearBuilding\SpeechRecClear\SpeechRecClear.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 06.09.2018 12:53:58.
+     1>Project "C:\Adocuments\Library\Clapeyron_ind\speech rec\pocketsphinxlib\PocketsphinxClearBuilding\SpeechRecClear\SpeechRecClear.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /D _MBCS /D _CRT_SECURE_NO_WARNINGS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt ac_mod.c decoder.c err.c logged_alloc.c main.c str_funcs.c wav_rec.c
-         wav_rec.c
-     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\wav_rec.c(31): warning C4013: 'check_wav_header' undefined; assuming extern returning int
-     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\wav_rec.c(13): warning C4101: 'hyp' : unreferenced local variable
-         str_funcs.c
-         main.c
-         logged_alloc.c
-         err.c
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /D _MBCS /D _CRT_SECURE_NO_WARNINGS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt ac_mod.c decoder.c
          decoder.c
      1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(33): warning C4101: 'rv' : unreferenced local variable
          ac_mod.c
@@ -26,8 +19,8 @@
          Debug\str_funcs.obj
          Debug\wav_rec.obj
          SpeechRecClear.vcxproj -> C:\Adocuments\Library\Clapeyron_ind\speech rec\pocketsphinxlib\PocketsphinxClearBuilding\Debug\SpeechRecClear.exe
-     1>Done Building Project "C:\Adocuments\Library\Clapeyron_ind\speech rec\pocketsphinxlib\PocketsphinxClearBuilding\SpeechRecClear\SpeechRecClear.vcxproj" (Rebuild target(s)).
+     1>Done Building Project "C:\Adocuments\Library\Clapeyron_ind\speech rec\pocketsphinxlib\PocketsphinxClearBuilding\SpeechRecClear\SpeechRecClear.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.45
+Time Elapsed 00:00:00.78

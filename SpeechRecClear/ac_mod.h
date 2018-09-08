@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 #include "prim_type.h"
+#include "fe.h"
+#include "feat.h"
 
 /**
  * States in utterance processing.
@@ -36,11 +38,21 @@ typedef enum acmod_state_e {
 struct ac_mod_s {
     /* A whole bunch of flags and counters: */
     uint8 state;        /**< State of utterance processing. */
+    uint8 grow_feat;    /**< Whether to grow feat_buf. */
+	
+    /* Feature computation: */
+    fe_t *fe;                  /**< Acoustic feature computation. */
+    feat_t *fcb;               /**< Dynamic feature computation. */
 
     /* Utterance processing: */
+    float32 **mfc_buf;   /**< Temporary buffer of acoustic features. */
+    float32 ***feat_buf; /**< Temporary buffer of dynamic features. */
     FILE *mfcñ_fh;		/**< File for writing acoustic feature data. */
     FILE *raw_fh;		/**< File for writing raw audio data. */
     FILE *sen_fh;        /**< File for writing senone score data. */
+    long *framepos;     /**< File positions of recent frames in senone file. */
+	
+    int32 n_feat_alloc; /**< Number of frames allocated in feat_buf */
 };
 
 typedef struct ac_mod_s ac_mod_t;
@@ -83,3 +95,29 @@ int ac_mod_set_raw_fh(ac_mod_t *ac_mod, FILE *log_fh);
  * @return 0 for success, <0 on error.
  */
 int ac_mod_set_sen_fh(ac_mod_t *ac_mod, FILE *sen_fh);
+
+/**
+ * Set memory allocation policy for utterance processing.
+ *
+ * @param grow_feat If non-zero, the internal dynamic feature buffer
+ * will expand as necessary to encompass any amount of data fed to the
+ * model.
+ * @return previous allocation policy.
+ */
+int ac_mod_set_grow(ac_mod_t *ac_mod, int grow_feat);
+
+/**
+ * Feed raw audio data to the acoustic model for scoring.
+ *
+ * @param inout_raw In: Pointer to buffer of raw samples
+ *                  Out: Pointer to next sample to be read
+ * @param inout_n_samps In: Number of samples available
+ *                      Out: Number of samples remaining
+ * @param full_utt If non-zero, this block represents a full
+ *                 utterance and should be processed as such.
+ * @return Number of frames of data processed.
+ */
+int ac_mod_process_raw(ac_mod_t *ac_mod,
+                       int16 const **inout_raw,
+                       size_t *inout_n_samps,
+                       int full_utt);

@@ -39,7 +39,7 @@ int recognise_from_file() {
 	dc_start_utt(dc);
     
 	while ((k = fread(adbuf, sizeof(int16), 2048, rawfile)) > 0) {
-
+        dc_process_raw(dc, adbuf, k, FALSE, FALSE);
 	}
 
 	dc_free(dc);

@@ -32,6 +32,12 @@
     <ClInclude Include="decoder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="fe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="feat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="err.c">
@@ -51,6 +57,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="decoder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="feat.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

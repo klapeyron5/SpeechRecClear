@@ -61,7 +61,7 @@ int dc_start_utt(decoder_t* dc) {
             return -1;
         }
         free(log_fn);
-      //  ac_mod_set_raw_fh(dc->ac_mod, raw_fh);
+        ac_mod_set_raw_fh(dc->ac_mod, raw_fh);
     }
     if (dc->sen_log_dir) {
         char *log_fn = string_join(dc->sen_log_dir, "/", uttid, ".sen", NULL);
@@ -77,10 +77,44 @@ int dc_start_utt(decoder_t* dc) {
     }
 
     /* Start auxiliary phone loop search. */
- //   if (dc->phone_loop)
- //       dc_search_start(dc->phone_loop);
+    if (dc->phone_loop)
+		dc->phone_loop->vt->start;
 
-    return 0;//dc_search_start(dc->search);
+    return dc->search->vt->start;
+}
+
+int dc_process_raw(decoder_t *dc,
+               int16 const *data,
+               size_t n_samples,
+               int no_search,
+               int full_utt) {
+    int n_search_fr = 0;
+
+    if (dc->ac_mod->state == ACMOD_IDLE) {
+		E_ERROR("Failed to process data, utterance is not started. Use start_utt to start it\n");
+		return 0;
+    }
+
+    if (no_search) //пока что нам сюда
+        ac_mod_set_grow(dc->ac_mod, TRUE);
+
+    while (n_samples) {
+        int n_fr;
+
+        /* Process some data into features. */
+        if ((n_fr = ac_mod_process_raw(dc->ac_mod, &data,
+                                     &n_samples, full_utt)) < 0)
+            return n_fr;
+
+        /* Score and search as much data as possible */
+        if (no_search)
+            continue;
+        if ((n_fr = dc_search_forward(dc)) < 0)
+            return n_fr;
+        n_search_fr += n_fr;
+    }
+
+    return n_search_fr;
 }
 
 int dc_free(decoder_t* dc) {

@@ -11,6 +11,10 @@
  * _e - enum
  * fh - filehandler
  * dc - decoder
+ * feat - feature
+ * fe - front-end
+ * o - old
+ * n - number
  */
 
 /*
