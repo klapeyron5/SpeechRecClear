@@ -1,4 +1,4 @@
 /*
- * Continuous recognition from a wav file
+ * Recognition from a wav file
  */
 int recognise_from_file();

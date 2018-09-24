@@ -38,6 +38,18 @@
     <ClInclude Include="feat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="fe_prespch_buf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gen_rand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fe_noise.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fe_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="err.c">
@@ -63,6 +75,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="feat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fe_prespch_buf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gen_rand.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fe_signal_proc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fe_noise.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -77,10 +77,10 @@ int dc_start_utt(decoder_t* dc) {
     }
 
     /* Start auxiliary phone loop search. */
-    if (dc->phone_loop)
-		dc->phone_loop->vt->start;
+  //  if (dc->phone_loop)
+	//	dc->phone_loop->vt->start;
 
-    return dc->search->vt->start;
+    return 0;//dc->search->vt->start;
 }
 
 int dc_process_raw(decoder_t *dc,
@@ -109,12 +109,12 @@ int dc_process_raw(decoder_t *dc,
         /* Score and search as much data as possible */
         if (no_search)
             continue;
-        if ((n_fr = dc_search_forward(dc)) < 0)
-            return n_fr;
-        n_search_fr += n_fr;
+      //  if ((n_fr = dc_search_forward(dc)) < 0)
+     //       return n_fr;
+     //   n_search_fr += n_fr;
     }
 
-    return n_search_fr;
+    return 0;//n_search_fr;
 }
 
 int dc_free(decoder_t* dc) {

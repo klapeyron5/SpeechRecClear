@@ -4,7 +4,6 @@
 
 #include "logged_alloc.h"
 
-
 char * string_join(const char *base, ...) {
     va_list args;
     size_t len;

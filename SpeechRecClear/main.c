@@ -15,6 +15,9 @@
  * fe - front-end
  * o - old
  * n - number
+ * 
+ * raw - 16bit PCM data
+ * samples - one instance (16bit sample) of raw data
  */
 
 /*

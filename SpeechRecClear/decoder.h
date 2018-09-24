@@ -11,8 +11,8 @@ struct decoder_s {
     ac_mod_t *ac_mod;    /**< Acoustic model. */
 
     /* Search modules. */
-    ps_search_t *search;     /**< Currently active search module. */
-    ps_search_t *phone_loop; /**< Phone loop search for lookahead. */
+ //   search_t *search;     /**< Currently active search module. */
+ //   search_t *phone_loop; /**< Phone loop search for lookahead. */
 
     /* Utterance-processing related stuff. */
     char const *mfcñ_log_dir; /**< Log directory for MFCC files. */

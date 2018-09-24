@@ -52,7 +52,15 @@ struct ac_mod_s {
     FILE *sen_fh;        /**< File for writing senone score data. */
     long *framepos;     /**< File positions of recent frames in senone file. */
 	
+    /* Rawdata collected during decoding */
+    int16 *rawdata;
+    int32 rawdata_size;
+    int32 rawdata_pos;
+	
+	int32 n_mfc_alloc;  /**< Number of frames allocated in mfc_buf */
     int32 n_feat_alloc; /**< Number of frames allocated in feat_buf */
+    int32 n_mfc_frame;  /**< Number of frames active in mfc_buf */
+    int32 mfc_outidx;   /**< Start of active frames in mfc_buf */
 };
 
 typedef struct ac_mod_s ac_mod_t;
@@ -107,7 +115,7 @@ int ac_mod_set_sen_fh(ac_mod_t *ac_mod, FILE *sen_fh);
 int ac_mod_set_grow(ac_mod_t *ac_mod, int grow_feat);
 
 /**
- * Feed raw audio data to the acoustic model for scoring.
+ * Feed raw audio data to the acoustic model for scoring (для вычислений).
  *
  * @param inout_raw In: Pointer to buffer of raw samples
  *                  Out: Pointer to next sample to be read

@@ -70,6 +70,10 @@
     <ClInclude Include="err.h" />
     <ClInclude Include="fe.h" />
     <ClInclude Include="feat.h" />
+    <ClInclude Include="fe_internal.h" />
+    <ClInclude Include="fe_noise.h" />
+    <ClInclude Include="fe_prespch_buf.h" />
+    <ClInclude Include="gen_rand.h" />
     <ClInclude Include="logged_alloc.h" />
     <ClInclude Include="prim_type.h" />
     <ClInclude Include="str_funcs.h" />
@@ -81,6 +85,10 @@
     <ClCompile Include="err.c" />
     <ClCompile Include="fe.c" />
     <ClCompile Include="feat.c" />
+    <ClCompile Include="fe_noise.c" />
+    <ClCompile Include="fe_prespch_buf.c" />
+    <ClCompile Include="fe_signal_proc.c" />
+    <ClCompile Include="gen_rand.c" />
     <ClCompile Include="logged_alloc.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="str_funcs.c" />

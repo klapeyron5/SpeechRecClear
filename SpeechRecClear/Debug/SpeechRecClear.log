@@ -1,26 +1,622 @@
-﻿Build started 06.09.2018 12:53:58.
+﻿Build started 21.09.2018 19:44:15.
      1>Project "C:\Adocuments\Library\Clapeyron_ind\speech rec\pocketsphinxlib\PocketsphinxClearBuilding\SpeechRecClear\SpeechRecClear.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /D _MBCS /D _CRT_SECURE_NO_WARNINGS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt ac_mod.c decoder.c
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /D _MBCS /D _CRT_SECURE_NO_WARNINGS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt ac_mod.c decoder.c err.c fe.c feat.c fe_noise.c fe_prespch_buf.c fe_signal_proc.c gen_rand.c logged_alloc.c main.c str_funcs.c wav_rec.c
+         wav_rec.c
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(28): error C2061: syntax error : identifier 'cmn_type_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(31): error C2061: syntax error : identifier 'agc'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(31): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(46): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(48): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(59): error C2059: syntax error : '}'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(83): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(83): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(84): error C2370: 'int32' : redefinition; different storage class
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\prim_type.h(7) : see declaration of 'int32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(84): error C2146: syntax error : missing ';' before identifier 'n_fr'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(85): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(90): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(90): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(91): warning C4142: benign redefinition of type
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(91): error C2370: 'float32' : redefinition; different storage class
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\prim_type.h(10) : see declaration of 'float32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(91): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(92): error C2370: 'int32' : redefinition; different storage class
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\prim_type.h(7) : see declaration of 'int32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(92): error C2146: syntax error : missing ';' before identifier 'o_fr'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(93): error C2059: syntax error : 'type'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(94): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.h(45): error C2061: syntax error : identifier 'feat_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.h(64): error C2059: syntax error : '}'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.h(14): error C2061: syntax error : identifier 'ps_search_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.h(15): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.h(21): error C2059: syntax error : '}'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.h(106): error C2016: C requires that a struct or union has at least one member
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.h(106): error C2061: syntax error : identifier 'searchfuncs_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.h(111): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.h(126): error C2059: syntax error : '}'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\wav_rec.c(31): warning C4013: 'check_wav_header' undefined; assuming extern returning int
+         str_funcs.c
+         main.c
+         logged_alloc.c
+         gen_rand.c
+         fe_signal_proc.c
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(7): error C2061: syntax error : identifier 'mfcc_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(7): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(9): error C2061: syntax error : identifier 'frame_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(9): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(10): error C2061: syntax error : identifier 'powspec_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(10): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(11): error C2061: syntax error : identifier 'window_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(11): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(74): error C2143: syntax error : missing ')' before 'const'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(74): error C2081: 'int16' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(74): error C2143: syntax error : missing '{' before 'const'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(75): error C2373: 'size_t' : redefinition; different type modifiers
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\crtdefs.h(430) : see declaration of 'size_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(75): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(76): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(77): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(78): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(78): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(94): error C2143: syntax error : missing ')' before 'const'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(94): error C2081: 'int16' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(94): error C2143: syntax error : missing '{' before 'const'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(95): error C2373: 'size_t' : redefinition; different type modifiers
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\crtdefs.h(430) : see declaration of 'size_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(95): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(96): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(97): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(98): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(99): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(100): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(100): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(103): error C2143: syntax error : missing ')' before 'const'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(103): error C2081: 'int16' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(103): error C2143: syntax error : missing '{' before 'const'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(103): error C2373: 'int32' : redefinition; different type modifiers
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(77) : see declaration of 'int32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(103): error C2146: syntax error : missing ';' before identifier 'len'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(103): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(106): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(106): error C2081: 'mfcc_t' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(106): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(106): error C2146: syntax error : missing ';' before identifier 'store_pcm'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(106): error C2059: syntax error : ')'
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\crtdefs.h(430) : see declaration of 'size_t'
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\crtdefs.h(430) : see declaration of 'size_t'
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(77) : see declaration of 'int32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\prim_type.h(6): error C2371: 'int16' : redefinition; different basic types
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(98) : see declaration of 'int16'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\prim_type.h(7): error C2370: 'int32' : redefinition; different storage class
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(77) : see declaration of 'int32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_noise.h(19): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_noise.h(19): error C2081: 'int32' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_noise.h(19): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_noise.h(19): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_noise.h(24): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_noise.h(24): error C2081: 'mfcc_t' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_noise.h(24): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_noise.h(24): error C2146: syntax error : missing ';' before identifier 'is_speech'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_noise.h(24): error C2146: syntax error : missing ';' before identifier 'store_pcm'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_noise.h(24): error C2059: syntax error : ')'
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(98) : see declaration of 'int16'
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(77) : see declaration of 'int32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(6): warning C4142: benign redefinition of type
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(6): error C2370: 'mfcc_t' : redefinition; different storage class
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(76) : see declaration of 'mfcc_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(10): error C2016: C requires that a struct or union has at least one member
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(10): error C2061: syntax error : identifier 'mfcc_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(12): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(15): error C2061: syntax error : identifier 'cep_write_ptr'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(15): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(17): error C2061: syntax error : identifier 'cep_read_ptr'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(17): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(19): error C2061: syntax error : identifier 'ncep'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(19): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(23): error C2061: syntax error : identifier 'pcm_write_ptr'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(23): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(25): error C2061: syntax error : identifier 'pcm_read_ptr'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(25): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(27): error C2061: syntax error : identifier 'npcm'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(27): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(30): error C2061: syntax error : identifier 'num_frames_cep'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(30): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(32): error C2061: syntax error : identifier 'num_frames_pcm'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(32): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(34): error C2061: syntax error : identifier 'num_cepstra'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(34): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(36): error C2061: syntax error : identifier 'num_samples'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(36): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(37): error C2059: syntax error : '}'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(47): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(47): error C2081: 'mfcc_t' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(47): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(47): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(50): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(50): error C2081: 'mfcc_t' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(50): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(50): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(53): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(53): error C2081: 'int16' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(53): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(54): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(54): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(57): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(57): error C2081: 'int16' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(57): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(57): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(69): error C2061: syntax error : identifier 'fe_prespch_ncep'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(69): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(69): error C2059: syntax error : 'type'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_internal.h(12): error C2061: syntax error : identifier 'int16'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_internal.h(13): error C2061: syntax error : identifier 'frame_shift'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_internal.h(13): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_internal.h(16): error C2061: syntax error : identifier 'frame_size'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_internal.h(16): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_internal.h(16): fatal error C1003: error count exceeds 100; stopping compilation
+         fe_prespch_buf.c
+         fe_noise.c
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(7): error C2061: syntax error : identifier 'mfcc_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(7): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(9): error C2061: syntax error : identifier 'frame_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(9): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(10): error C2061: syntax error : identifier 'powspec_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(10): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(11): error C2061: syntax error : identifier 'window_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(11): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(74): error C2143: syntax error : missing ')' before 'const'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(74): error C2081: 'int16' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(74): error C2143: syntax error : missing '{' before 'const'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(75): error C2373: 'size_t' : redefinition; different type modifiers
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\crtdefs.h(430) : see declaration of 'size_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(75): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(76): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(77): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(78): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(78): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(94): error C2143: syntax error : missing ')' before 'const'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(94): error C2081: 'int16' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(94): error C2143: syntax error : missing '{' before 'const'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(95): error C2373: 'size_t' : redefinition; different type modifiers
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\crtdefs.h(430) : see declaration of 'size_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(95): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(96): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(97): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(98): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(99): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(100): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(100): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(103): error C2143: syntax error : missing ')' before 'const'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(103): error C2081: 'int16' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(103): error C2143: syntax error : missing '{' before 'const'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(103): error C2373: 'int32' : redefinition; different type modifiers
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(77) : see declaration of 'int32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(103): error C2146: syntax error : missing ';' before identifier 'len'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(103): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(106): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(106): error C2081: 'mfcc_t' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(106): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(106): error C2146: syntax error : missing ';' before identifier 'store_pcm'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(106): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\prim_type.h(6): error C2371: 'int16' : redefinition; different basic types
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(98) : see declaration of 'int16'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\prim_type.h(7): error C2370: 'int32' : redefinition; different storage class
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(77) : see declaration of 'int32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_noise.h(19): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_noise.h(19): error C2081: 'int32' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_noise.h(19): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_noise.h(19): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_noise.h(24): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_noise.h(24): error C2081: 'mfcc_t' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_noise.h(24): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_noise.h(24): error C2146: syntax error : missing ';' before identifier 'is_speech'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_noise.h(24): error C2146: syntax error : missing ';' before identifier 'store_pcm'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_noise.h(24): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(7): warning C4142: benign redefinition of type
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(7): error C2370: 'mfcc_t' : redefinition; different storage class
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(76) : see declaration of 'mfcc_t'
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\crtdefs.h(430) : see declaration of 'size_t'
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\crtdefs.h(430) : see declaration of 'size_t'
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(77) : see declaration of 'int32'
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(76) : see declaration of 'mfcc_t'
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\crtdefs.h(430) : see declaration of 'size_t'
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\crtdefs.h(430) : see declaration of 'size_t'
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(77) : see declaration of 'int32'
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(98) : see declaration of 'int16'
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(77) : see declaration of 'int32'
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(98) : see declaration of 'int16'
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(77) : see declaration of 'int32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(6): warning C4142: benign redefinition of type
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(6): error C2370: 'mfcc_t' : redefinition; different storage class
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(76) : see declaration of 'mfcc_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(10): error C2016: C requires that a struct or union has at least one member
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(10): error C2061: syntax error : identifier 'mfcc_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(12): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(15): error C2061: syntax error : identifier 'cep_write_ptr'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(15): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(17): error C2061: syntax error : identifier 'cep_read_ptr'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(17): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(19): error C2061: syntax error : identifier 'ncep'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(19): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(23): error C2061: syntax error : identifier 'pcm_write_ptr'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(23): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(25): error C2061: syntax error : identifier 'pcm_read_ptr'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(25): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(27): error C2061: syntax error : identifier 'npcm'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(27): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(30): error C2061: syntax error : identifier 'num_frames_cep'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(30): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(32): error C2061: syntax error : identifier 'num_frames_pcm'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(32): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(34): error C2061: syntax error : identifier 'num_cepstra'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(34): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(36): error C2061: syntax error : identifier 'num_samples'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(36): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(37): error C2059: syntax error : '}'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(47): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(47): error C2081: 'mfcc_t' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(47): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(47): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(50): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(50): error C2081: 'mfcc_t' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(50): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(50): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(53): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(53): error C2081: 'int16' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(53): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(54): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(54): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(57): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(57): error C2081: 'int16' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(57): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(57): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(69): error C2061: syntax error : identifier 'fe_prespch_ncep'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(69): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_prespch_buf.h(69): error C2059: syntax error : 'type'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_internal.h(12): error C2061: syntax error : identifier 'int16'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_internal.h(13): error C2061: syntax error : identifier 'frame_shift'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_internal.h(13): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_internal.h(16): error C2061: syntax error : identifier 'frame_size'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe_internal.h(16): fatal error C1003: error count exceeds 100; stopping compilation
+         feat.c
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(28): error C2061: syntax error : identifier 'cmn_type_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(31): error C2061: syntax error : identifier 'agc'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(31): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(46): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(48): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(59): error C2059: syntax error : '}'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(83): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(83): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(84): error C2370: 'int32' : redefinition; different storage class
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\prim_type.h(7) : see declaration of 'int32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(84): error C2146: syntax error : missing ';' before identifier 'n_fr'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(85): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(90): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(90): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(91): warning C4142: benign redefinition of type
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(91): error C2370: 'float32' : redefinition; different storage class
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\prim_type.h(10) : see declaration of 'float32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(91): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(92): error C2370: 'int32' : redefinition; different storage class
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\prim_type.h(7) : see declaration of 'int32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(92): error C2146: syntax error : missing ';' before identifier 'o_fr'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(93): error C2059: syntax error : 'type'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(94): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.c(9): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.c(9): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.c(9): error C2370: 'int32' : redefinition; different storage class
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\prim_type.h(7) : see declaration of 'int32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.c(9): error C2146: syntax error : missing ';' before identifier 'nfr'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.c(9): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.c(9): error C2054: expected '(' to follow 'nfr'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.c(40): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.c(40): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.c(40): warning C4142: benign redefinition of type
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.c(40): error C2370: 'float32' : redefinition; different storage class
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\prim_type.h(10) : see declaration of 'float32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.c(40): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.c(40): error C2370: 'int32' : redefinition; different storage class
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\prim_type.h(7) : see declaration of 'int32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.c(40): error C2146: syntax error : missing ';' before identifier 'o_fr'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.c(40): error C2059: syntax error : 'type'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.c(40): error C2059: syntax error : ')'
+         fe.c
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(7): error C2061: syntax error : identifier 'mfcc_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(7): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(9): error C2061: syntax error : identifier 'frame_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(9): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(10): error C2061: syntax error : identifier 'powspec_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(10): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(11): error C2061: syntax error : identifier 'window_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(11): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(74): error C2143: syntax error : missing ')' before 'const'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(74): error C2081: 'int16' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(74): error C2143: syntax error : missing '{' before 'const'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(75): error C2373: 'size_t' : redefinition; different type modifiers
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\crtdefs.h(430) : see declaration of 'size_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(75): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(76): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(77): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(78): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(78): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(94): error C2143: syntax error : missing ')' before 'const'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(94): error C2081: 'int16' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(94): error C2143: syntax error : missing '{' before 'const'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(95): error C2373: 'size_t' : redefinition; different type modifiers
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\crtdefs.h(430) : see declaration of 'size_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(95): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(96): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(97): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(98): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(99): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(100): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(100): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(103): error C2143: syntax error : missing ')' before 'const'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(103): error C2081: 'int16' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(103): error C2143: syntax error : missing '{' before 'const'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(103): error C2373: 'int32' : redefinition; different type modifiers
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(77) : see declaration of 'int32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(103): error C2146: syntax error : missing ';' before identifier 'len'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(103): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(106): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(106): error C2081: 'mfcc_t' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(106): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(106): error C2146: syntax error : missing ';' before identifier 'store_pcm'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.h(106): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(7): error C2143: syntax error : missing ')' before 'const'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(7): error C2081: 'int16' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(7): error C2143: syntax error : missing '{' before 'const'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(8): error C2373: 'size_t' : redefinition; different type modifiers
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\crtdefs.h(430) : see declaration of 'size_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(8): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(9): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(10): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(11): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(11): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(11): error C2054: expected '(' to follow 'out_frameidx'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(16): error C2143: syntax error : missing ')' before 'const'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(16): error C2081: 'int16' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(16): error C2143: syntax error : missing '{' before 'const'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(17): error C2373: 'size_t' : redefinition; different type modifiers
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\crtdefs.h(430) : see declaration of 'size_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(17): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(18): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(19): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(20): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(21): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(22): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(22): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(22): error C2054: expected '(' to follow 'out_frameidx'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(168): error C2061: syntax error : identifier 'fe_start_utt'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(168): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(168): error C2059: syntax error : 'type'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(177): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(177): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(177): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(177): error C2054: expected '(' to follow 'vad_data'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(187): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(187): error C2081: 'int32' : name in formal parameter list illegal
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(187): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(187): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(187): error C2059: syntax error : 'type'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\fe.c(187): error C2059: syntax error : ')'
+         err.c
          decoder.c
-     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(33): warning C4101: 'rv' : unreferenced local variable
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(28): error C2061: syntax error : identifier 'cmn_type_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(31): error C2061: syntax error : identifier 'agc'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(31): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(46): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(48): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(59): error C2059: syntax error : '}'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(83): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(83): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(84): error C2370: 'int32' : redefinition; different storage class
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\prim_type.h(7) : see declaration of 'int32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(84): error C2146: syntax error : missing ';' before identifier 'n_fr'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(85): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(90): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(90): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(91): warning C4142: benign redefinition of type
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(91): error C2370: 'float32' : redefinition; different storage class
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\prim_type.h(10) : see declaration of 'float32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(91): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(92): error C2370: 'int32' : redefinition; different storage class
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\prim_type.h(7) : see declaration of 'int32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(92): error C2146: syntax error : missing ';' before identifier 'o_fr'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(93): error C2059: syntax error : 'type'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(94): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.h(45): error C2061: syntax error : identifier 'feat_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.h(64): error C2059: syntax error : '}'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.h(14): error C2061: syntax error : identifier 'ps_search_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.h(15): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.h(21): error C2059: syntax error : '}'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.h(106): error C2016: C requires that a struct or union has at least one member
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.h(106): error C2061: syntax error : identifier 'searchfuncs_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.h(111): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.h(126): error C2059: syntax error : '}'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(13): error C2027: use of undefined type 'decoder_s'
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.h(6) : see declaration of 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(14): error C2037: left of 'ref_count' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(24): error C2037: left of 'ac_mod' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(24): error C2198: 'ac_mod_free' : too few arguments for call
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(25): error C2037: left of 'ac_mod' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(27): error C2037: left of 'ac_mod' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(36): error C2037: left of 'ac_mod' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(42): error C2037: left of 'mfcс_log_dir' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(43): error C2037: left of 'mfcс_log_dir' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(52): error C2037: left of 'ac_mod' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(52): warning C4133: 'function' : incompatible types - from 'FILE *' to 'ac_mod_t *'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(52): error C2198: 'ac_mod_set_mfcс_fh' : too few arguments for call
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(54): error C2037: left of 'raw_log_dir' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(55): error C2037: left of 'raw_log_dir' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(64): error C2037: left of 'ac_mod' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(64): warning C4133: 'function' : incompatible types - from 'FILE *' to 'ac_mod_t *'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(64): error C2198: 'ac_mod_set_raw_fh' : too few arguments for call
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(66): error C2037: left of 'sen_log_dir' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(67): error C2037: left of 'sen_log_dir' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(76): error C2037: left of 'ac_mod' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(76): warning C4133: 'function' : incompatible types - from 'FILE *' to 'ac_mod_t *'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(76): error C2198: 'ac_mod_set_sen_fh' : too few arguments for call
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(80): error C2037: left of 'phone_loop' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(81): error C2037: left of 'phone_loop' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(83): error C2037: left of 'search' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(83): warning C4033: 'dc_start_utt' must return a value
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(93): error C2037: left of 'ac_mod' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(99): error C2037: left of 'ac_mod' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(99): warning C4047: 'function' : 'ac_mod_t *' differs in levels of indirection from 'int'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(99): warning C4024: 'ac_mod_set_grow' : different types for formal and actual parameter 1
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(99): error C2198: 'ac_mod_set_grow' : too few arguments for call
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(105): error C2037: left of 'ac_mod' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(105): warning C4047: 'function' : 'ac_mod_t *' differs in levels of indirection from 'const int16 **'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(105): warning C4024: 'ac_mod_process_raw' : different types for formal and actual parameter 1
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(106): warning C4047: 'function' : 'const int16 **' differs in levels of indirection from 'size_t *'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(106): warning C4024: 'ac_mod_process_raw' : different types for formal and actual parameter 2
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(106): warning C4047: 'function' : 'size_t *' differs in levels of indirection from 'int'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(106): warning C4024: 'ac_mod_process_raw' : different types for formal and actual parameter 3
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(106): error C2198: 'ac_mod_process_raw' : too few arguments for call
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(112): warning C4013: 'dc_search_forward' undefined; assuming extern returning int
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(123): error C2037: left of 'ref_count' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(124): error C2037: left of 'ref_count' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(124): warning C4033: 'dc_free' must return a value
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(125): error C2037: left of 'ac_mod' specifies undefined struct/union 'decoder_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\decoder.c(125): error C2198: 'ac_mod_free' : too few arguments for call
          ac_mod.c
-     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(14): warning C4102: 'error_out' : unreferenced label
-     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(49): warning C4013: 'acmod_write_senfh_header' undefined; assuming extern returning int
-     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(53): warning C4101: 'nsenstr' : unreferenced local variable
-     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(53): warning C4101: 'logbasestr' : unreferenced local variable
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(28): error C2061: syntax error : identifier 'cmn_type_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(31): error C2061: syntax error : identifier 'agc'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(31): error C2059: syntax error : ';'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(46): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(48): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(59): error C2059: syntax error : '}'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(83): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(83): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(84): error C2370: 'int32' : redefinition; different storage class
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\prim_type.h(7) : see declaration of 'int32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(84): error C2146: syntax error : missing ';' before identifier 'n_fr'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(85): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(90): error C2143: syntax error : missing ')' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(90): error C2143: syntax error : missing '{' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(91): warning C4142: benign redefinition of type
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(91): error C2370: 'float32' : redefinition; different storage class
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\prim_type.h(10) : see declaration of 'float32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(91): error C2143: syntax error : missing ';' before '*'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(92): error C2370: 'int32' : redefinition; different storage class
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\prim_type.h(7) : see declaration of 'int32'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(92): error C2146: syntax error : missing ';' before identifier 'o_fr'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(93): error C2059: syntax error : 'type'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\feat.h(94): error C2059: syntax error : ')'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.h(45): error C2061: syntax error : identifier 'feat_t'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.h(64): error C2059: syntax error : '}'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(12): error C2027: use of undefined type 'ac_mod_s'
+                 c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.h(38) : see declaration of 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(31): error C2037: left of 'mfcс_fh' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(32): error C2037: left of 'mfcс_fh' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(32): error C2198: 'fclose' : too few arguments for call
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(33): error C2037: left of 'mfcс_fh' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(34): error C2037: left of 'mfcс_fh' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(34): error C2198: 'fwrite' : too few arguments for call
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(39): error C2037: left of 'raw_fh' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(40): error C2037: left of 'raw_fh' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(40): error C2198: 'fclose' : too few arguments for call
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(41): error C2037: left of 'raw_fh' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(46): error C2037: left of 'sen_fh' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(47): error C2037: left of 'sen_fh' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(47): error C2198: 'fclose' : too few arguments for call
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(48): error C2037: left of 'sen_fh' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(51): warning C4013: 'acmod_write_senfh_header' undefined; assuming extern returning int
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(67): error C2037: left of 'feat_buf' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(67): warning C4013: 'feat_array_realloc' undefined; assuming extern returning int
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(67): error C2037: left of 'fcb' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(68): error C2037: left of 'n_feat_alloc' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(69): error C2037: left of 'framepos' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(70): error C2037: left of 'framepos' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(70): error C2198: '__realloc_log__' : too few arguments for call
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(71): error C2037: left of 'n_feat_alloc' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(75): error C2037: left of 'grow_feat' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(76): error C2037: left of 'grow_feat' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(79): error C2037: left of 'n_feat_alloc' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(92): error C2037: left of 'rawdata_pos' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(92): error C2037: left of 'rawdata_size' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(93): error C2037: left of 'rawdata' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(93): error C2037: left of 'rawdata_pos' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(93): warning C4090: 'function' : different 'const' qualifiers
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(93): warning C4022: 'memcpy' : pointer mismatch for actual parameter 2
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(93): error C2198: 'memcpy' : too few arguments for call
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(94): error C2037: left of 'rawdata_pos' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(96): error C2037: left of 'raw_fh' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(97): error C2037: left of 'raw_fh' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(97): error C2198: 'fwrite' : too few arguments for call
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(99): error C2037: left of 'fe' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(99): warning C4047: 'function' : 'const int16 **' differs in levels of indirection from 'size_t *'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(99): warning C4024: 'fe_process_frames' : different types for formal and actual parameter 2
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(99): warning C4047: 'function' : 'mfcc_t **' differs in levels of indirection from 'int32 *'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(99): warning C4024: 'fe_process_frames' : different types for formal and actual parameter 4
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(99): error C2198: 'fe_process_frames' : too few arguments for call
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(101): error C2037: left of 'n_mfc_alloc' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(102): error C2037: left of 'mfc_buf' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(102): error C2198: 'free_2d' : too few arguments for call
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(103): error C2037: left of 'mfc_buf' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(104): error C2037: left of 'fe' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(104): error C2037: left of 'mfc_buf' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(104): warning C4047: 'function' : 'size_t' differs in levels of indirection from 'char [113]'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(104): warning C4024: '__calloc_2d_log__' : different types for formal and actual parameter 2
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(104): error C2198: '__calloc_2d_log__' : too few arguments for call
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(105): error C2037: left of 'n_mfc_alloc' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(107): error C2037: left of 'n_mfc_frame' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(108): error C2037: left of 'mfc_outidx' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(109): error C2037: left of 'fe' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(109): error C2198: 'fe_start_utt' : too few arguments for call
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(110): error C2037: left of 'fe' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(110): warning C4047: 'function' : 'fe_t *' differs in levels of indirection from 'const int16 **'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(110): warning C4024: 'fe_process_frames' : different types for formal and actual parameter 1
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(110): warning C4047: 'function' : 'const int16 **' differs in levels of indirection from 'size_t *'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(110): warning C4024: 'fe_process_frames' : different types for formal and actual parameter 2
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(111): error C2037: left of 'mfc_buf' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(111): error C2198: 'fe_process_frames' : too few arguments for call
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(113): warning C4013: 'fe_end_utt' undefined; assuming extern returning int
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(113): error C2037: left of 'fe' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(113): error C2037: left of 'mfc_buf' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(116): error C2037: left of 'mfc_buf' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(117): warning C4013: 'acmod_process_full_cep' undefined; assuming extern returning int
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(118): error C2037: left of 'n_mfc_frame' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(142): error C2037: left of 'n_mfc_alloc' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(142): error C2037: left of 'n_mfc_frame' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(144): error C2037: left of 'mfc_outidx' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(144): error C2037: left of 'n_mfc_frame' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(144): error C2037: left of 'n_mfc_alloc' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(147): error C2037: left of 'n_mfc_alloc' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(148): error C2037: left of 'n_mfc_alloc' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(149): error C2037: left of 'fe' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(149): warning C4047: 'function' : 'fe_t *' differs in levels of indirection from 'const int16 **'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(149): warning C4024: 'fe_process_frames' : different types for formal and actual parameter 1
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(149): warning C4047: 'function' : 'const int16 **' differs in levels of indirection from 'size_t *'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(149): warning C4024: 'fe_process_frames' : different types for formal and actual parameter 2
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(150): error C2037: left of 'mfc_buf' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(150): warning C4047: 'function' : 'mfcc_t **' differs in levels of indirection from 'int32 *'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(150): warning C4024: 'fe_process_frames' : different types for formal and actual parameter 4
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(150): error C2198: 'fe_process_frames' : too few arguments for call
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(154): error C2065: 'acmod' : undeclared identifier
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(154): error C2223: left of '->utt_start_frame' must point to struct/union
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(157): error C2037: left of 'rawdata_pos' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(157): error C2037: left of 'rawdata_size' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(158): error C2037: left of 'rawdata' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(158): error C2037: left of 'rawdata_pos' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(158): warning C4090: 'function' : different 'const' qualifiers
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(158): warning C4022: 'memcpy' : pointer mismatch for actual parameter 2
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(158): error C2198: 'memcpy' : too few arguments for call
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(159): error C2037: left of 'rawdata_pos' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(162): error C2037: left of 'rawfh' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(165): error C2037: left of 'rawfh' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(165): error C2198: 'fwrite' : too few arguments for call
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(176): error C2037: left of 'n_mfc_frame' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(179): error C2037: left of 'n_mfc_alloc' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(184): warning C4013: 'assert' undefined; assuming extern returning int
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(184): error C2037: left of 'n_mfc_alloc' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(185): error C2037: left of 'fe' specifies undefined struct/union 'ac_mod_s'
+     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\pocketsphinxclearbuilding\speechrecclear\ac_mod.c(185): fatal error C1003: error count exceeds 100; stopping compilation
          Generating Code...
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Adocuments\Library\Clapeyron_ind\speech rec\pocketsphinxlib\PocketsphinxClearBuilding\Debug\SpeechRecClear.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Adocuments\Library\Clapeyron_ind\speech rec\pocketsphinxlib\PocketsphinxClearBuilding\Debug\SpeechRecClear.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Adocuments\Library\Clapeyron_ind\speech rec\pocketsphinxlib\PocketsphinxClearBuilding\Debug\SpeechRecClear.lib" /MACHINE:X86 Debug\ac_mod.obj
-         Debug\decoder.obj
-         Debug\err.obj
-         Debug\logged_alloc.obj
-         Debug\main.obj
-         Debug\str_funcs.obj
-         Debug\wav_rec.obj
-         SpeechRecClear.vcxproj -> C:\Adocuments\Library\Clapeyron_ind\speech rec\pocketsphinxlib\PocketsphinxClearBuilding\Debug\SpeechRecClear.exe
-     1>Done Building Project "C:\Adocuments\Library\Clapeyron_ind\speech rec\pocketsphinxlib\PocketsphinxClearBuilding\SpeechRecClear\SpeechRecClear.vcxproj" (Build target(s)).
+     1>Done Building Project "C:\Adocuments\Library\Clapeyron_ind\speech rec\pocketsphinxlib\PocketsphinxClearBuilding\SpeechRecClear\SpeechRecClear.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:00.78
+Time Elapsed 00:00:00.36

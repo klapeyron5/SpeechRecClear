@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 #include "ac_mod.h"
 #include "logged_alloc.h"
@@ -89,36 +90,36 @@ static int ac_mod_process_full_raw(ac_mod_t *ac_mod,
 
     /* Write to logging file if any. */
     if (*inout_n_samps + ac_mod->rawdata_pos < ac_mod->rawdata_size) {
-	memcpy(ac_mod->rawdata + ac_mod->rawdata_pos, *inout_raw, *inout_n_samps * sizeof(int16));
-	ac_mod->rawdata_pos += *inout_n_samps;
+		memcpy(ac_mod->rawdata + ac_mod->rawdata_pos, *inout_raw, *inout_n_samps * sizeof(int16));
+		ac_mod->rawdata_pos += *inout_n_samps;
     }
-    if (ac_mod->rawfh)
-        fwrite(*inout_raw, sizeof(int16), *inout_n_samps, ac_mod->rawfh);
+    if (ac_mod->raw_fh)
+        fwrite(*inout_raw, sizeof(int16), *inout_n_samps, ac_mod->raw_fh);
     /* Resize mfc_buf to fit. */
     if (fe_process_frames(ac_mod->fe, NULL, inout_n_samps, NULL, &n_fr, NULL) < 0)
         return -1;
     if (ac_mod->n_mfc_alloc < n_fr + 1) {
-        ckd_free_2d(ac_mod->mfc_buf);
-        ac_mod->mfc_buf = ckd_calloc_2d(nfr + 1, fe_get_output_size(ac_mod->fe),
+        free_2d(ac_mod->mfc_buf);
+		ac_mod->mfc_buf = calloc_2d_logged_fail(n_fr + 1, ac_mod->fe->feature_dimension,
                                        sizeof(**ac_mod->mfc_buf));
-        ac_mod->n_mfc_alloc = nfr + 1;
+        ac_mod->n_mfc_alloc = n_fr + 1;
     }
     ac_mod->n_mfc_frame = 0;
     ac_mod->mfc_outidx = 0;
-    fe_start_utt(acmod->fe);
+    fe_start_utt(ac_mod->fe);
     if (fe_process_frames(ac_mod->fe, inout_raw, inout_n_samps,
                           ac_mod->mfc_buf, &n_fr, NULL) < 0)
         return -1;
-    fe_end_utt(ac_mod->fe, ac_mod->mfc_buf[nfr], &ntail);
-    nfr += ntail;
+    fe_end_utt(ac_mod->fe, ac_mod->mfc_buf[n_fr], &ntail);
+    n_fr += ntail;
 
     cepptr = ac_mod->mfc_buf;
-    nfr = acmod_process_full_cep(ac_mod, &cepptr, &nfr);
+    n_fr = acmod_process_full_cep(ac_mod, &cepptr, &n_fr);
     ac_mod->n_mfc_frame = 0;
-    return nfr;
+    return n_fr;
 }
 
-int acmod_process_raw(ac_mod_t *ac_mod,
+int ac_mod_process_raw(ac_mod_t *ac_mod,
                   int16 const **inout_raw,
                   size_t *inout_n_samps,
                   int full_utt) {
